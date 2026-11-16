@@ -244,7 +244,7 @@
         if (window.console && console.info) {
           console.info(
             "[DIVA AI] No APK found at -> " + CFG.apkUrl +
-            "\nSite owner: upload your APK to that path, or set apkUrl in assets/js/config.js to its public URL."
+            "\nSite owner: upload your APK next to index.html, or set apkUrl in config.js to its full public URL."
           );
         }
       });

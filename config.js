@@ -1,7 +1,8 @@
 /* ============================================================================
    DIVA AI OFFICIAL — SITE CONFIGURATION
    ----------------------------------------------------------------------------
-   EDIT THIS FILE ONLY when you want to change the APK download or contact info.
+   Root-level file: config.js   |   Edit this file to change the APK download,
+   contact details or your custom domain.
    Every page reads these values automatically, so you never have to touch the
    HTML again.
    ========================================================================== */
@@ -12,8 +13,8 @@ window.DIVA_CONFIG = {
      --------------------------------------------------------------------------
      Two easy options:
 
-     OPTION A (recommended) — host the file inside this website:
-       1. Upload your APK into the folder:  assets/downloads/
+     OPTION A (recommended) — host the file inside this repository:
+       1. Upload your APK to the SAME folder as index.html (repository root).
        2. Name it exactly:                  diva-ai-1.0.0.apk
        3. Leave the line below exactly as it is. Done.
 
@@ -23,7 +24,7 @@ window.DIVA_CONFIG = {
        apkUrl: "https://github.com/yourname/diva/releases/download/v1.0.0/diva-ai.apk",
        apkUrl: "https://yourdomain.com/files/diva-ai-1.0.0.apk",
   ------------------------------------------------------------------------- */
-  apkUrl: "assets/downloads/diva-ai-1.0.0.apk",
+  apkUrl: "diva-ai-1.0.0.apk",
 
   /* --------------------------------------------------------------------------
      2) RELEASE DETAILS (shown on the Download page and in the footer)
@@ -57,9 +58,11 @@ window.DIVA_CONFIG = {
   /* --------------------------------------------------------------------------
      5) FUTURE CUSTOM DOMAIN (optional but recommended)
      --------------------------------------------------------------------------
-     Every link in this website is *relative*, so the site works at a root
-     domain (https://divaai.com), in a sub-folder, or on a free host — no
-     rebuild needed.
+     Every link in this website is *relative* and all files sit in the same
+     folder as index.html, so the site works at a root domain
+     (https://yourdomain.com), in a project sub-folder
+     (https://user.github.io/repo/), or on any free static host — no rebuild
+     needed.
 
      When your domain is ready:
        1. Deploy the site to your host (Netlify, Vercel, GitHub Pages,
@@ -69,5 +72,13 @@ window.DIVA_CONFIG = {
           writes the correct <link rel="canonical"> and og:url tags for SEO.
        4. GitHub Pages users: also add a file named CNAME (no extension)
           containing only your domain, in the same folder as index.html.
+
+     NOTE ON FOLDER STRUCTURE
+     --------------------------------------------------------------------------
+     This build is FLAT: every file lives in the repository root next to
+     index.html — style.css, fonts.css, config.js, main.js, diva-avatar.jpg,
+     diva-avatar-sm.jpg, favicon.svg, apple-touch-icon.png, og-image.jpg,
+     icon-192.png, icon-512.png, site.webmanifest and all .html pages.
+     Keep it that way and all links keep working.
   ------------------------------------------------------------------------- */
 };
