@@ -24,8 +24,7 @@ window.DIVA_CONFIG = {
        apkUrl: "https://github.com/yourname/diva/releases/download/v1.0.0/diva-ai.apk",
        apkUrl: "https://yourdomain.com/files/diva-ai-1.0.0.apk",
   ------------------------------------------------------------------------- */
-  apkUrl: "diva-ai-1.0.0.apk",
-
+  apkUrl: "https://github.com/akandaakibur13-wq/diva-ai-official/releases/download/v1.0.0/diva-ai-1.0.0.apk",
   /* --------------------------------------------------------------------------
      2) RELEASE DETAILS (shown on the Download page and in the footer)
   ------------------------------------------------------------------------- */
@@ -38,7 +37,7 @@ window.DIVA_CONFIG = {
   packageName: "com.divaai.official",
   /* Optional: paste the SHA-256 of your APK so users can verify the file.
      Leave it as an empty string to hide the row completely. */
-  sha256: "",
+  sha256: "6bed933100c209252e334e9fa4798813b66cd478d311c08f0a6c006eb8936ba1",
 
   /* --------------------------------------------------------------------------
      3) CONTACT + BRAND (used by the Contact page, footer and mail links)
